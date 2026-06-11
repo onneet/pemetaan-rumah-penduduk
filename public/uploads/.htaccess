@@ -1,0 +1,8 @@
+# Matikan eksekusi script di folder image
+php_flag engine off
+Options -Indexes -ExecCGI
+
+<FilesMatch "\.(php|php5|phtml|sh|py|pl)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
